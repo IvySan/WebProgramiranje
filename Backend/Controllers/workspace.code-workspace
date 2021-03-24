@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\Documents\\2020_21\\ProjekatWeb"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ProjekatWeb"
+	}
+}

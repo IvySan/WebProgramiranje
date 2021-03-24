@@ -1,0 +1,29 @@
+
+CREATE TABLE Polica(
+
+	ID INT NOT NULL AUTO_INCREMENT,
+        Oznaka VARCHAR(30) NOT NULL,
+	MaxBroj INT NOT NULL, 
+	TrenutniBroj INT NOT NULL, 
+	BibliotekaID INT NOT NULL,
+       PRIMARY KEY(ID),
+       FOREIGN KEY(BibliotekaID) REFERENCES Biblioteka(ID)
+
+) ENGINE = BibliotekaDB DEFAULT CHARSET = utf8;
+
+INSERT INTO Polica (Oznaka, MaxBroj, TrenutniBroj, BibliotekaID) VALUES
+("Akcioni romani", 8, 0, 1),
+("Drama", 4, 0, 1),
+("Enciklopedija", 5, 0, 1),
+("Epska fantastika", 3, 0, 1),
+("Horor", 4, 0, 1),
+("Klasici", 10, 0, 1),
+("Krimi romani", 7, 0, 1);
+
+INSERT INTO Polica (Oznaka, MaxBroj, TrenutniBroj, BibliotekaID) VALUES
+("Akcioni romani", 8, 0, 1003),
+("Drama", 4, 0, 1003),
+("Enciklopedija", 5, 0, 1003),
+("Epska fantastika", 3, 0, 1003),
+("Horor", 4, 0, 1003),
+("Klasici", 10, 0, 1003);
